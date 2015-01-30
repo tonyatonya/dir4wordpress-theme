@@ -1,0 +1,351 @@
+/* Dir4TV. css 
+ */
+ .dark-orange {
+	 color:#f23707;
+ }
+.dir4tv .left-column {
+	background:#ffffff;
+}
+
+.dir4tv .left-column .right-solid-bar {
+	background:#f23707;
+	width:6px;
+}
+
+.dir4tv .brand {
+	background-image:url(img/logo-dir4tv-black.svg);
+}
+
+.dir4tv .main-nav-item {
+	color:#58595b;
+}
+
+.dir4tv .main-nav-item:hover {
+	color:#f23707;
+}
+
+.dir4tv .left-super-column {
+	background: white;
+}
+
+.dir4tv .left-column .search-box-label {
+	color:white;
+	text-transform: uppercase;
+}
+
+.dir4tv .nav-num {
+	color:white;
+}
+
+.page-template-template-featured-work-php .playlist-wrapper,
+.page-template-template-featured-work-php .bx-wrapper, 
+.page-template-template-featured-work-php .bx-viewport,
+.page-template-template-featured-work-php .playlist,
+.page-template-template-featured-work-php .playlist li {
+	height:100%;
+}
+
+.page-template-template-featured-work-php .playlist li {
+	    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position : center center;
+}
+
+.dir4tv .playbox-title.featured {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+/*
+ * Showreels
+ **********************************************/
+
+
+
+.dir4tv .reel-item .reel-detail {
+	background:white;
+}
+
+.dir4tv .reel-title {
+	color:black;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   font-size:16px;
+}
+/*
+ * Directors
+ **********************************************/
+#page-dir4films-directors {
+  background: url(img/bg-dir4films-directors.jpg) left top fixed;
+
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.chair {
+	background: url(img/chair.png) left top no-repeat;
+	width:80px;
+	height:118px;
+	position:absolute;
+	left:42px;
+	top:51px;
+}
+#dir4films-directors {
+	overflow:auto;
+}
+.directors-list-wrapper {
+	margin:50px 0 0 150px;
+	
+}
+
+.directors-list li a .nickname {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 200;
+   color:#797052;
+   font-size:34px;
+   line-height: 40px;
+
+   display:block;
+   
+}
+
+.directors-list li a {
+	text-transform: uppercase;
+	font-size: 34px;
+}
+
+.directors-list li a:hover .nickname {
+	display: none;
+}
+
+
+
+.directors-list li a .fullname {
+	font-family:'Arial';
+	font-weight: bold;
+	font-style: italic;
+	color:white;
+	display:none;
+}
+
+.directors-list li a .fullname .small {
+	font-size:14px;
+}
+
+.directors-list li a:hover .fullname {
+	display: block;
+}
+
+
+.single-people {
+	  background: url(img/bg-dir4films-directors-single.jpg) left top fixed;
+
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+#single-people {
+	overflow: auto;
+	height:auto;
+}
+
+#single-people .row .column-right {
+	overflow: visible;
+}
+
+#single-people .playlist-wrapper {
+	overflow: visible;
+}
+.people-single-wrapper {
+	color:white;
+	margin:114px auto 0;
+	max-width: 760px;
+}
+
+.people-single-wrapper .column-left {
+	width:200px;
+	float:left;
+	position:static;
+}
+
+.people-single-wrapper .column-right {
+	margin-left:280px;
+	max-width:560px;
+}
+
+.people-single-wrapper .column-right .playlist li {
+	max-width: 560px;
+	max-height: 290px;
+}
+
+.people-single-wrapper .playlist-wrapper {
+	/*max-height: 280px;*/
+}
+
+.people-single-wrapper .bx-wrapper {
+	margin-bottom:10px;
+}
+
+.people-single-wrapper .playbox-title { display:none;}
+
+.people-title {
+	font-family: 'Arial Black';
+	font-size:34px;
+	text-transform: uppercase;
+}
+
+.btn-info {
+	background:url(img/sprite.png) 0 -155px;
+	width: 11px;
+	height: 11px;
+	display: block;
+}
+
+#single-people .btn-info {
+	position:absolute;
+	top:280px;
+	left:-20px;
+}
+
+.video-info
+ {
+	display:none;
+}
+
+
+
+
+
+
+/*
+ * What we do
+ ********************************************/
+ #page-dir4tv-what-we-do {
+	  background: url(img/bg-dir4tv-whatwedo.jpg) left bottom fixed;
+
+	 -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+ }
+
+#dir4tv-what-we-do .column-left h1,
+#dir4tv-what-we-do .column-left h2,
+#dir4tv-what-we-do .column-left h3{
+	margin:0 20px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+
+}
+
+#dir4tv-what-we-do .column-left h1 {
+	margin-top:138px;
+	font-size:27px;
+}
+
+#dir4tv-what-we-do .column-left h2 {
+	font-size: 20px;
+	font-style: italic;
+	color:white;
+}
+
+#dir4tv-what-we-do .column-left h3 {
+	font-size: 20px;
+	color:#a7a9ac;
+}
+
+.dir4tv-wwd-header {
+	margin-top:131px;
+	font-size:51px;
+	color:white;
+}
+
+#dir4tv-what-we-do .column-right p {
+	width:220px;
+	color:white;
+	font-size: 12px;
+}
+
+
+/*
+ * DIR4Films team
+ ********************************************/
+ #page-dir4films-team {
+ 	 background: url(img/bg-dir4films-team.jpg) left bottom fixed;
+
+	 -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+
+ }
+.dir4films-team-item {
+	width:100%;
+}
+.team-item-wrapper {
+	width:350px;
+	position:relative;
+	margin:210px auto;
+	color: white;
+}
+ .team-header {
+ 	font-family: 'Arial Black';
+	font-size:34px;
+	line-height: 34px;
+	text-transform: uppercase;
+	color:#7d6e4e;
+ }
+
+ .dir4films-team-slider-wrapper .bx-prev, .dir4films-team-slider-wrapper .bx-next {
+	position:absolute;
+	top:50%;
+	margin-top:-16px;
+ }
+
+  .dir4films-team-slider-wrapper .bx-next {
+  	right:33px;
+  }
+
+   .dir4films-team-slider-wrapper .bx-prev {
+   	left:33px;
+   } 
+
+
+
+/*
+ * DIR4Films team
+ ********************************************/
+ 	
+#page-dir4films-getintouch {
+	 background: url(img/bg-dir4films-getintouch.jpg) left bottom fixed;
+
+	 -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+}
+
+#page-dir4films-getintouch .contact-label {
+	color:#7d6e4e;
+}
+
+.brown-background .subnav-item a {
+	color:#7d6e4e;
+}
+
+.brown-background .subnav-item a:hover {
+	color:white;
+}
+
+
+#contact-form-column {
+	display: none;
+}
+
+.contact-subnav .subnav-item { display: none;}

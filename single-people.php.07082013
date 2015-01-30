@@ -1,0 +1,63 @@
+<?php
+//single-people
+get_header();?>
+<div class="content-main-panel" id="single-people">
+  <div class="row">
+
+	<div class="people-single-wrapper">
+		<div class="column-left">
+      	<h1 class="people-title"><?php the_title(); ?></h1>
+      	<p><span class="darkgold"><?php the_field('position'); ?></span></p>
+		<p><span class="darkgold">Email</span> <?php the_field('email'); ?></p>
+		<p><span class="darkgold">Website</span> <?php the_field('website'); ?></p>
+		</div>
+		<div class="column-right">
+			 <?php 
+			 	global $post;
+			 	$args = array(
+					'post_type' => 'reels',
+					'numberposts' => -1,
+					'people' => $post->post_name
+				);
+          	$reels = new WP_Query($args); ?>
+          	<div class="playlist-wrapper">
+          		<ul class="playlist bxslider" id="single-people-playlist">
+		        <?php 
+		        	$tns = array();
+		        	while ($reels->have_posts()): $reels->the_post();?>
+					<li class="playbox">
+						<?php 
+				   		 //the_post_thumbnail('large'); 
+				   		$videoArr = get_post_meta(get_the_ID(), '_fvp_video', true);
+				   		$tn = get_the_post_thumbnail( get_the_ID(), array(65, 48));
+				   		$tns[] = $tn;
+				   		#$tn = getimagesize($src);
+				   		?>
+
+		             <div class="vimeo-wrapper"><?php the_post_thumbnail() ?>
+						
+		             </div>
+		             <a href="#<?php echo $videoArr['id'];?>" class="btn-play diamond"><span>play</span></a>
+		             <div class="video-info">
+			             <h4 class="playbox-title"><?php the_title(); ?></h4>
+			             <p class="playbox-description"><?php the_excerpt(); ?></p>
+			         </div>
+		           </li>
+		        <?php endwhile; ?>
+	        	</ul>
+		    </div>
+		    <a href="#" class="btn-info"></a>
+		            
+		    <div id="bx-pager">
+		    	<?php foreach ($tns as $k => $tn): ?>
+			  		<a data-slide-index="<?php echo $k; ?>" href=""><?php echo $tn; ?></a>
+				<?php endforeach; ?>
+			</div>
+
+
+
+		</div>
+    </div>
+  </div>
+</div>
+<?php get_footer(); ?>

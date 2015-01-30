@@ -1,0 +1,30 @@
+<?php get_header(); ?>
+<div class="row-fluid">
+  <ul class="reels-list">
+  <?php $args = array(
+      'post_type'       => 'reels',
+      'posts_per_page'  =>-1,
+      'numberposts'     => -1
+    );
+    $reels = new WP_Query($args); ?>
+
+    <?php while ($reels->have_posts()): $reels->the_post();?>
+      <li class="span4 reel-item">
+        <div class="reel-item-wrapper">
+        <?php 
+           //the_post_thumbnail('large'); 
+          $videoArr = get_post_meta(get_the_ID(), '_fvp_video', true);
+          #$src = get_video_thumbnail($videoArr['full'], 'medium');
+          ?>
+          <?php the_post_thumbnail( ); ?>
+          <div class="reel-detail">
+            <a href="<?php echo $videoArr['full'];?>" class="btn-play diamond"><span>play</span></a>
+            <h2 class="reel-title"><?php the_title(); ?></h2>
+          </div>
+          </div>
+      </li>
+    <?php endwhile; ?>
+  </ul>
+</div>
+
+<?php get_footer();?>

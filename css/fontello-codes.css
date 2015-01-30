@@ -1,0 +1,3 @@
+
+.icon-left-thin:before { content: '\2190'; } /* '←' */
+.icon-right-thin:before { content: '\2192'; } /* '→' */

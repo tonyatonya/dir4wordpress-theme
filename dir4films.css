@@ -1,0 +1,342 @@
+/* Dir4films. css 
+ */
+.dir4films .left-column {
+	background:#21262a;
+}
+
+.dir4films .left-column .right-solid-bar {
+	background:#7a7052;
+	width:6px;
+}
+
+.dir4films .left-column .search-box-label {
+	color:white;
+	text-transform: uppercase;
+}
+
+.dir4films .nav-num {
+	color:black;
+}
+
+.page-template-template-featured-work-php .playlist-wrapper,
+.page-template-template-featured-work-php .bx-wrapper, 
+.page-template-template-featured-work-php .bx-viewport,
+.page-template-template-featured-work-php .playlist,
+.page-template-template-featured-work-php .playlist li {
+	height:100%;
+}
+
+.page-template-template-featured-work-php .playlist li {
+	    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position : center center;
+}
+
+/*
+ * Showreels
+ **********************************************/
+
+.reel-item {
+	overflow: hidden;
+	position:relative;
+	display: inline-block;
+}
+.reel-item-wrapper {
+	padding-top:56%;
+}
+
+.reel-item img {
+	max-width:100%;
+	height:auto;
+	top:0;
+	left:0;
+	position:absolute;
+	z-index:1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	
+}
+
+
+
+.reel-item .reel-detail {
+	position:absolute;
+	top:0; left:0;
+	width:100%;
+	height:200px;
+	background:#7d6e4d;
+	z-index:2;
+
+	opacity: 0;
+
+}
+
+.reel-title {
+	color:white;
+	font-family: 'Arial Black';
+	font-size:13px;
+	text-align: center;
+	margin-top:70px;
+}
+.reel-item .btn-play.diamond {
+	top:0;
+	z-index:3;
+}
+/*
+ * Directors
+ **********************************************/
+#page-dir4films-directors {
+  background: url(img/bg-dir4films-directors.jpg) left top fixed;
+
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+.chair {
+	background: url(img/chair.png) left top no-repeat;
+	width:80px;
+	height:118px;
+	position:absolute;
+	left:42px;
+	top:51px;
+}
+#dir4films-directors {
+	overflow:auto;
+}
+.directors-list-wrapper {
+	margin:50px 0 0 150px;
+	
+}
+
+.directors-list li a .nickname {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 200;
+   color:#797052;
+   font-size:34px;
+   line-height: 40px;
+
+   display:block;
+   
+}
+
+.directors-list li a {
+	text-transform: uppercase;
+	font-size: 34px;
+}
+
+.directors-list li a:hover .nickname {
+	display: none;
+}
+
+
+
+.directors-list li a .fullname {
+	font-family:'Arial';
+	font-weight: bold;
+	font-style: italic;
+	color:white;
+	display:none;
+}
+
+.directors-list li a .fullname .small {
+	font-size:14px;
+}
+
+.directors-list li a:hover .fullname {
+	display: block;
+}
+
+
+.single-people {
+	  background: url(img/bg-dir4films-directors-single.jpg) left top fixed;
+
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+#single-people {
+	overflow: auto;
+	height:auto;
+}
+
+#single-people .row .column-right {
+	overflow: visible;
+}
+
+#single-people .playlist-wrapper {
+	overflow: visible;
+}
+.people-single-wrapper {
+	color:white;
+	margin:114px auto 0;
+	max-width: 760px;
+}
+
+.people-single-wrapper .column-left {
+	width:200px;
+	float:left;
+	position:static;
+}
+
+.people-single-wrapper .column-right {
+	margin-left:280px;
+	max-width:560px;
+}
+
+.people-single-wrapper .column-right .playlist li {
+	max-width: 560px;
+	max-height: 290px;
+}
+
+.people-single-wrapper .playlist-wrapper {
+	/*max-height: 280px;*/
+}
+
+.people-single-wrapper .bx-wrapper {
+	margin-bottom:10px;
+}
+
+.people-single-wrapper .playbox-title { display:none;}
+
+.people-title {
+	font-family: 'Arial Black';
+	font-size:34px;
+	text-transform: uppercase;
+}
+
+.btn-info {
+	background:url(img/sprite.png) 0 -155px;
+	width: 11px;
+	height: 11px;
+	display: block;
+}
+
+#single-people .btn-info {
+	position:absolute;
+	top:280px;
+	left:-20px;
+}
+
+.video-info
+ {
+	display:none;
+}
+
+
+
+
+
+
+/*
+ * What we do
+ ********************************************/
+ #page-dir4films-what-we-do {
+	  background: url(img/bg-dir4films-whatwedo.jpg) left bottom fixed;
+
+	 -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+ }
+
+ #page-dir4films-what-we-do .center-column {
+ 	overflow: auto;
+ }
+ .what-we-do-wrapper {
+ 	width:223px;
+ 	color:white;
+ 	overflow: auto;
+ 	margin:106px 0 0 55px;
+ }
+
+ .what-we-do-wrapper h1 {
+ 	font-family: 'Arial Black';
+ 	font-size:43px;
+ 	line-height: 37px;
+ }
+
+
+
+/*
+ * DIR4Films team
+ ********************************************/
+ #page-dir4films-team {
+ 	 background: url(img/bg-dir4films-team.jpg) left bottom fixed;
+
+	 -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+
+ }
+.dir4films-team-item {
+	width:100%;
+}
+.team-item-wrapper {
+	width:350px;
+	position:relative;
+	margin:210px auto;
+	color: white;
+}
+ .team-header {
+ 	font-family: 'Arial Black';
+	font-size:34px;
+	line-height: 34px;
+	text-transform: uppercase;
+	color:#7d6e4e;
+ }
+
+ .dir4films-team-slider-wrapper .bx-prev, .dir4films-team-slider-wrapper .bx-next {
+	position:absolute;
+	top:50%;
+	margin-top:-16px;
+ }
+
+  .dir4films-team-slider-wrapper .bx-next {
+  	right:33px;
+  }
+
+   .dir4films-team-slider-wrapper .bx-prev {
+   	left:33px;
+   } 
+
+
+
+/*
+ * DIR4Films team
+ ********************************************/
+ 	
+#page-dir4films-getintouch {
+	 background: url(img/bg-dir4films-getintouch.jpg) left bottom fixed;
+
+	 -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; 
+}
+
+#page-dir4films-getintouch .contact-label {
+	color:#7d6e4e;
+}
+
+.brown-background .subnav-item a {
+	color:#7d6e4e;
+}
+
+.brown-background .subnav-item a:hover {
+	color:white;
+}
+
+
+#contact-form-column {
+	display: none;
+}
+
+.contact-subnav .subnav-item { display: none;}

@@ -1,0 +1,11 @@
+orange file
+
+	all file in /images
+	css/orange.css
+	backgroundslider.php
+	new-all.php
+
+file edited by orange
+	page-dir4-home.php
+	functions.php	
+	index.php
